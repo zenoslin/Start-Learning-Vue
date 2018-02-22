@@ -35,16 +35,7 @@
 			el: '#app',
 			data:{
 				title: 'this is a todo list',
-				items: [
-					{
-						label: 'coding',
-						isFinished: false
-					},
-					{
-						label: 'walking',
-						isFinished: true
-					},
-				],
+				items: [],
 				newItem: ''
 			},
 			methods: {
@@ -52,7 +43,11 @@
 					item.isFinished = !item.isFinished
 				},
 				addNew: function () {
-					console.log(this.newItem)
+					this.items.push({
+						label: this.newItem,
+						isFinished: false
+					})
+					this.newItem = ''
 				}
 			}
 		})
