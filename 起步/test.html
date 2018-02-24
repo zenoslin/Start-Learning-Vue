@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>vue test demo</title>
+
+
+</head>
+
+<body>
+
+<div id="app-1">
+	<ol>
+		<!-- 创建一个 todo-item 组件的实例 -->
+		<todo-item></todo-item>
+	</ol>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+<script>
+
+	// 定义名为 todo-item 的新组件
+	Vue.component('todo-item', {
+		template: '<li>这是个待办项</li>'
+	})
+
+	var app = new Vue({
+		el: '#app-1'
+	})
+
+</script>
+
+</body>
+</html>
