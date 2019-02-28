@@ -1,2 +1,2 @@
 # Start-Learning-Vue
-用于储存自己学习Vue的一些dome
+用于记录自己学习Vue的过程
