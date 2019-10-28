@@ -7,6 +7,40 @@
   </head>
   <body>
     <div id="app">
+      <section class="todoapp">
+        <header class="header">
+          <h1>todos</h1>
+          <input class="new-todo" />
+        </header>
+        <section class="main">
+          <input type="checkbox" id="toggle-all" class="toggle-all" />
+          <label for="toggle-all">Mark all as complete</label>
+          <ul class="todo-list">
+            <li class="todo">
+              <div class="view">
+                <input type="checkbox" class="toggle">
+                <label></label>
+                <button class="destroy"></button>
+              </div>
+              <input type="text" class="edit">
+            </li>
+          </ul>
+        </section>
+        <footer class="footer">
+          <span class="todo-count">
+            <strong></strong>
+          </span>
+          <ul class="filters">
+            <li><a href="#/all">All</a></li>
+            <li><a href="#/active">Active</a></li>
+            <li><a href="#/Completed">Completed</a></li>
+          </ul>
+          <button class="clear-completed"></button>
+        </footer>
+      </section>
     </div>
+    <script>
+    const { createApp, reactive, computed, watch, onMounted, onUnmounted } = Vue;
+    </script>
   </body>
 </html>
